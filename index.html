@@ -1,5 +1,3 @@
-!!!!!!!!!!!Check this out!!!!!!
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,9 +11,16 @@
         This is our $Finder ! Your Solution to Find the Best Deals !
     </h1>
     <form action = "login.php" method = "post">
-        Username <br> <input type = "text" name = "username" placeholder = "Enter name here"> <br>
-        Password <br> <input type = "password" name ="password">
+        Username <br> <input type = "text" name = "loginusername" placeholder = "Enter name here"> <br>
+        Password <br> <input type = "password" name ="loginpassword">
         <br>
+        <input type = "submit" value = "Submit">
+    </form>
+    <br> 
+    <form action = "register.php" method = "post">
+        Username <br> <input type = "text" name = "regusername" placeholder = "Enter name here"> <br>
+        Email <br> <input type = "email" name = "regemail"> <br>
+        Password <br> <input type = "password" name ="regpassword"> <br>
         <input type = "submit" value = "Submit">
     </form>
 </body>
