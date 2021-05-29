@@ -1,0 +1,89 @@
+body {
+  background: linear-gradient(90deg, #355c7d, #6c5b7b, #c06c84);
+  display: flex;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+header {
+  display: flex;
+  justify-content: safe;
+  width: 100vw;
+  height: 10vh;
+  background: #eeb462;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+.logo {
+  font-family: "Teko", sans-serif;
+  font-size: 6vh;
+  width: fit-content;
+  height: fit-content;
+  color: #0f9b0f;
+  text-shadow: 2px 2px 2px #6d6027;
+  padding: 0 2vh 0 2vh;
+  margin: 0 0 0 0;
+  justify-self: left;
+  align-self: center;
+}
+
+nav {
+  position: relative;
+  width: 90vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-bar-list {
+  list-style: none;
+  width: fit-content;
+  height: fit-content;
+  display: inline-flex;
+  align-self: center;
+}
+
+.nav-link {
+  font-family: "JetBrains Mono", monospace;
+  text-transform: uppercase;
+  font-size: 2.5vh;
+  margin: 0 2vh 0 2vh;
+  text-shadow: 2px 2px 2px #af7a31;
+}
+
+.other-page {
+  text-decoration: none;
+  color: rgb(71, 71, 71);
+  font-weight: 1000;
+}
+
+.curr-page {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  color: black;
+  font-weight: 1000;
+}
+
+.account-background {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  padding: 0 0 0 0;
+}
+
+.account-icon {
+  background-color: transparent;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  margin: 0 0 0 0;
+  background-color: #cf9139;
+}
+
+.curr-icon {
+  border-radius: 50%;
+  box-shadow: 0 0 2px 2px black;
+  width: 5vh;
+  height: 5vh;
+}
