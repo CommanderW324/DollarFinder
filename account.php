@@ -1,4 +1,3 @@
-
 <?php
     session_start();
 ?>
@@ -33,7 +32,14 @@
       ?>
     </header>
     
-    <main></main>
+    <main>
+        <a href = "logout.php"> 
+            Logout
+        </a>
+        <?php
+            echo "Username : " . $_SESSION['usern'];
+        ?>
+    </main>
     <footer></footer>
   </body>
 </html>
