@@ -1,15 +1,17 @@
 body {
   background: linear-gradient(90deg, #355c7d, #6c5b7b, #c06c84);
+  background: #329d9c;
   display: flex;
   padding: 0 0 0 0;
   margin: 0 0 0 0;
+  overflow-x: hidden;
 }
 
 header {
   display: flex;
   justify-content: safe;
   width: 100vw;
-  height: 10vh;
+  height: 80px;
   background: #eeb462;
   padding: 0 0 0 0;
   margin: 0 0 0 0;
@@ -17,12 +19,12 @@ header {
 
 .logo {
   font-family: "Teko", sans-serif;
-  font-size: 6vh;
+  font-size: 55px;
   width: fit-content;
   height: fit-content;
   color: #0f9b0f;
   text-shadow: 2px 2px 2px #6d6027;
-  padding: 0 2vh 0 2vh;
+  padding: 0 20px 0 20px;
   margin: 0 0 0 0;
   justify-self: left;
   align-self: center;
@@ -31,7 +33,7 @@ header {
 nav {
   position: relative;
   width: 90vw;
-  height: 10vh;
+  height: inherit;
   display: flex;
   justify-content: space-between;
 }
@@ -47,8 +49,8 @@ nav {
 .nav-link {
   font-family: "JetBrains Mono", monospace;
   text-transform: uppercase;
-  font-size: 2.5vh;
-  margin: 0 2vh 0 2vh;
+  font-size: 25px;
+  margin: 0 20px 0 20px;
   text-shadow: 2px 2px 2px #af7a31;
 }
 
@@ -73,12 +75,11 @@ nav {
 }
 
 .account-icon {
-  background-color: transparent;
-  width: 5vh;
-  height: 5vh;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   margin: 0 0 0 0;
-  background-color: #cf9139;
+  background-color: transparent;
 }
 
 .curr-icon {
@@ -86,4 +87,197 @@ nav {
   box-shadow: 0 0 2px 2px black;
   width: 5vh;
   height: 5vh;
+}
+
+main {
+  width: 100vw;
+  height: 90vh;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.form-container {
+  position: relative;
+  top: 10%;
+  width: 400px;
+  height: 500px;
+  background: linear-gradient(0deg, #0f2027, #203a43, #2c5364);
+  display: inline-block;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.form-selector {
+  font-family: sans-serif;
+  color: white;
+  font-weight: bolder;
+  font-size: larger;
+  position: absolute;
+  top: 25px;
+  cursor: pointer;
+}
+
+.login-selector {
+  left: 80px;
+}
+
+.register-selector {
+  right: 80px;
+}
+
+.indicator {
+  width: 125px;
+  height: 3px;
+  position: absolute;
+  top: 70px;
+  left: 40px;
+  background: #0f9b0f;
+  padding: 0;
+  margin: 0;
+  border: none;
+  transition: transform 1s;
+}
+
+.form {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  transition: transform 1s;
+}
+.login-form {
+}
+.register-form {
+  left: 400px;
+}
+
+.form-text-field {
+  font-family: "FontAwesome", sans-serif;
+  text-align: center;
+  padding: 0;
+  font-size: 20px;
+  font-weight: normal;
+  width: 300px;
+  height: 40px;
+  border-radius: 25px;
+  margin: 0;
+  background: transparent;
+  color: white;
+  border-color: white;
+  border-width: 3 px;
+}
+
+.form-text-field::placeholder {
+  color: white;
+  opacity: 0.7;
+}
+
+.email-field {
+  position: absolute;
+  left: 48px;
+  top: 50px;
+}
+
+.password-field {
+  position: absolute;
+  left: 48px;
+  top: 150px;
+}
+
+.register-form > .email-field {
+  top: 25px;
+}
+
+.register-form > .password-field {
+  top: 180px;
+}
+
+.username-field {
+  position: absolute;
+  left: 48px;
+  top: 100px;
+}
+
+.form-submit {
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  border-radius: 25px;
+  background: linear-gradient(90deg, #30e8bf, #ff8235);
+  border-width: 0;
+  margin: 0;
+  padding: 0;
+  left: 125px;
+  top: 250px;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.register-form > .form-submit {
+  top: 270px;
+}
+
+.form-submit:hover {
+  transform: scale(1.1);
+  background: #98b57a;
+}
+
+.form-submit:active {
+  transform: scale(0.95);
+  background: #baa463;
+}
+
+.form-text-field:focus {
+  outline: none;
+}
+
+.forgot-password {
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+  position: absolute;
+  bottom: 50px;
+  left: 138px;
+  transition: transform 1s;
+}
+
+.about-heading {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: bolder;
+  font-size: 30px;
+  position: absolute;
+  justify-self: center;
+  padding: 0;
+  margin: 0;
+  top: 50px;
+
+  text-shadow: 2px 2px 2px #bdc3c7;
+}
+
+.poster-img {
+  height: 1000px;
+  width: 717px;
+  position: absolute;
+  top: 150px;
+}
+
+.video-heading {
+  top: 1200px;
+}
+
+.proposal-video {
+  position: absolute;
+  top: 1300px;
+  width: 707px;
+  height: 398px;
+  padding-bottom: 100px;
 }
