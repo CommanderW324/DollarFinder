@@ -8,6 +8,7 @@
     $query = "select username, password from users";
     $sql = mysqli_query($conn, $query);
 
+
     if($sql == false) {
         echo "Failed Database";
     } else {
