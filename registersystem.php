@@ -9,8 +9,6 @@
     $email =  mysqli_real_escape_string($conn, $_POST['regemail']);
     $hash = md5(rand(0,10000));
     $activated = 0;
-    
-
     if(mysqli_connect_errno()) {
         echo "Failed to Connect: " . mysqli_connect_error();
     }
@@ -29,7 +27,7 @@
         if($success) {
             echo "Your Account has been successfully created please activate it throught the link in the email";
         } else {
-            echo "Failed please try again !";
+            echo "Failed please try again!";
         }
 
     } else {

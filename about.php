@@ -1,4 +1,3 @@
-
 <?php
     session_start();
 ?>
@@ -28,12 +27,25 @@
   </head>
   <body>
     <header>
-      <?php
-            include("navigation.php"); 
+      <?php 
+            include("navigation.php");
       ?>
     </header>
-    
-    <main></main>
+    <main>
+      <h2 class="about-heading poster-heading">Proposal Poster</h2>
+      <img src="2399.png" alt="Dollar Finder Proposal" class="poster-img" />
+      <h2 class="about-heading video-heading">Proposal Video</h2>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/Z7pfjg0NKnU"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        class="proposal-video"
+      ></iframe>
+    </main>
     <footer></footer>
   </body>
 </html>
