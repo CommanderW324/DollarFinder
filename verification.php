@@ -1,8 +1,9 @@
 <?php 
+    ob_start();
     $username = $_GET['username'];
     $hash = $_GET['hash'];
     $conn = mysqli_connect("localhost", "root", "", "DollarFinder");
-
+    
     if(mysqli_connect_errno()) {
         echo "Failed to Connect: " . mysqli_connect_error();
     }
@@ -13,8 +14,10 @@
         $update = "update users set activated = 1 where id =". $row['id'];
         $sql = mysqli_query($conn, $update);
         echo "Successfull !";
+        header("refresh=3;url=index.php");
     } else {
         echo "Wrong activation link, please go back !";
+        header("refresh=5;url=index.php");
     }
 
 ?>

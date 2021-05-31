@@ -33,7 +33,13 @@
       ?>
     </header>
     
-    <main></main>
+    <main>
+    <?php
+      if(isset($_SESSION['id'])) {
+        echo "<h1> Welcome Back, " . $_SESSION['usern'];
+      }
+    ?>
+    </main>
     <footer></footer>
   </body>
 </html>

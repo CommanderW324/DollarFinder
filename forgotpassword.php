@@ -39,65 +39,26 @@
       <div class="form-container">
         <div class="form-selection">
           <span class="form-selector login-selector" onclick="login()"
-            >Login</span
-          >
-          <span class="form-selector register-selector" onclick="register()"
-            >Register</span
+            >Enter your Email </span
           >
           <hr class="indicator" id="login-register-indicator"/>
         </div>
         <form
           id="login-form-id"
           class="form login-form"
-          action="loginsystem.php"
+          action="forgotpasswordsystem.php"
           method="post"
         >
           <input
             type="text"
-            name="loginusername"
-            placeholder="&#xf0e0;   Username"
-            class="form-text-field email-field"
-          />
-          <br />
-          <input
-            type="password"
-            name="loginpassword"
-            placeholder="&#xf023;   Password"
-            class="form-text-field password-field"
-          />
-          <br />
-          <input type="submit" value="Login" class="form-submit" />
-        </form>
-        <a href="forgotpassword.php" id="forgot-password-id" class="forgot-password">Forgot password?</i></a>
-        <form
-        id="register-form-id"
-          class="form register-form"
-          action="registersystem.php"
-          method="post"
-        >
-          <input
-            type="text"
-            name="regemail"
+            name="forgotemail"
             placeholder="&#xf0e0;   Email"
             class="form-text-field email-field"
           />
           <br />
-          <input
-            type="password"
-            name="regpassword"
-            placeholder="&#xf023;   Password"
-            class="form-text-field password-field"
-          />
-          <br />
-          <input
-            type="text"
-            name="regusername"
-            placeholder="&#xf2c2;   Username"
-            class="form-text-field username-field"
-          />
-          <br />
-          <input type="submit" value="Register" class="form-submit" />
+          <input type="submit" value="Send Reset" class="form-submit" />
         </form>
+        
       </div>
     </main>
     <footer></footer>
