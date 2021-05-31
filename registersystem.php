@@ -9,7 +9,7 @@
     $email =  mysqli_real_escape_string($conn, $_POST['regemail']);
     $hash = md5(rand(0,10000));
     $activated = 0;
-    $mailid = "teamnaik36@gmail.com";
+    $mailid = "ENTER MAILID HERE (as a string)";
     if(mysqli_connect_errno()) {
         echo "Failed to Connect: " . mysqli_connect_error();
     }
