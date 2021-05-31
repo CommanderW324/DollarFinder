@@ -16,3 +16,10 @@ function login() {
   Indicator.style.transform = "translateX(0px)";
   ForgotPassword.style.transform = "translateX(0px)";
 }
+$(function () {
+  $("header a").each(function () {
+    if ($(this).prop("href") == window.location.href) {
+      $(this).addClass("curr-page");
+    }
+  });
+});
