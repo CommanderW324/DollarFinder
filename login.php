@@ -33,7 +33,7 @@
                 <hr class="indicator" id="login-register-indicator" />
             </div>
             <form id="login-form-id" class="form login-form" action="loginsystem.php" method="post">
-                <input type="text" name="loginusername" placeholder="&#xf0e0;   Email"
+                <input type="text" name="loginusername" placeholder="&#xf2c2;   Username"
                     class="form-text-field email-field" />
                 <br />
                 <input type="password" name="loginpassword" placeholder="&#xf023;   Password"
