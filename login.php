@@ -41,7 +41,7 @@
                 <br />
                 <input type="submit" value="Login" class="form-submit" />
             </form>
-            <a href="#" id="forgot-password-id" class="forgot-password">Forgot password?</i></a>
+            <a href="forgotpassword.php" id="forgot-password-id" class="forgot-password">Forgot password?</i></a>
             <form id="register-form-id" class="form register-form" action="registersystem.php" method="post">
                 <input type="text" name="regemail" placeholder="&#xf0e0;   Email" class="form-text-field email-field" />
                 <br />

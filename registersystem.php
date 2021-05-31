@@ -35,6 +35,7 @@
         }
 
     } else {
-        header("location: index.php"); 
+        echo "Failure : Duplicate Username or Email !";
+        header("refresh:5;url=index.php"); 
     }
 ?>

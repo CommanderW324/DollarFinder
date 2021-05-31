@@ -25,7 +25,7 @@
                     }
                 } else {
                     $_SESSION['password'] = "false";
-                    header("location: index.php");
+                    header("location: login.php");
                 }
             }
         }

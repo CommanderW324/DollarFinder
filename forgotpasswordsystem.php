@@ -22,12 +22,12 @@
         if($success) {
             
             echo "The link to reset password is in your email !";
-            header("refresh=5;url=login.php");
+            header("refresh=5;url=localhost/DollarFinder/login.php");
             
         } else {
             
             echo "Failed please try again!";
-            header("refresh=5;url=login.php");
+            header("refresh=5;url=localhost/DollarFinder/login.php");
         }
     } else {
         echo "Try again to home !";

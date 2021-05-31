@@ -33,7 +33,7 @@
   <body>
     <header>
      <?php 
-        include("navigation.php");
+        include("phpcomp/navigation.php");
      ?>
     <main>
       <div class="form-container">

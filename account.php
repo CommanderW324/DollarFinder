@@ -1,5 +1,9 @@
 <?php
     session_start();
+    if(isset($_SESSION['id']) == FALSE) {
+        echo "Not logged in";
+        header("location:login.php");
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -32,7 +32,7 @@
   <body>
     <header>
      <?php 
-        include("navigation.php");
+        include("phpcomp/navigation.php");
      ?>
     </header>
     <main>
