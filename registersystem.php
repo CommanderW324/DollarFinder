@@ -9,6 +9,7 @@
     $email =  mysqli_real_escape_string($conn, $_POST['regemail']);
     $hash = md5(rand(0,10000));
     $activated = 0;
+    $mailid = "teamnaik36@gmail.com";
     if(mysqli_connect_errno()) {
         echo "Failed to Connect: " . mysqli_connect_error();
     }
@@ -20,8 +21,8 @@
         $subject = 'Activating Dollar Finder';
         $content = 'Please click the following link to activate your account :
         localhost/DollarFinder/verification.php?username=' . $username . '&hash='. $hash;
-        $headers ='From: masterpokemon43@gmail.com' . "\r\n" .
-        'Reply-To: masterpokemon43@gmail.com' . "\r\n" .
+        $headers ='From: ' . $mailid . "\r\n" .
+        'Reply-To: ' . $mailid . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
         $success = mail($to, $subject, $content, $headers);
         if($success) {
