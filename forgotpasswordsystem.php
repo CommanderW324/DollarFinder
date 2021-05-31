@@ -2,7 +2,7 @@
     
     $conn = mysqli_connect("localhost", "root", "", "DollarFinder");
     $email = mysqli_real_escape_string($conn, $_POST['forgotemail']);
-    $mailid = "teamnaik36@gmail.com";
+    $mailid = "ENTER MAILID HERE (as a string)";
     $hash = md5(rand(0,10000));
     if(mysqli_connect_errno()) {
         echo "Failed to Connect: " . mysqli_connect_error();
