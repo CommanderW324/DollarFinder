@@ -23,12 +23,17 @@
         include("phpcomp/navigation.php"); 
       ?>
     </header>
-    <main></main>
-    <?php
-      include("phpcomp/footer.php"); 
-    ?>
+    <main>
+        <h2 class="coming-soon">COMING SOON...</h2>
+    </main>
+    <footer class="footer">
+        <?php
+            include("phpcomp/footer.php"); 
+      ?>
+    </footer>
 </body>
 <?php
     include("script.php");
     ?>
+
 </html>

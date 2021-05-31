@@ -29,16 +29,19 @@
     </header>
 
     <main>
-        <a href="logout.php">
+        <a href="logout.php" class="nav-link">
             Logout
         </a>
         <?php
             echo "Username : " . $_SESSION['usern'];
         ?>
     </main>
-    <?php
+    <footer class="footer">
+        <?php
             include("phpcomp/footer.php"); 
       ?>
+    </footer>
+
 </body>
 <?php
             include("script2.php"); 

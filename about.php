@@ -32,11 +32,11 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen class="proposal-video"></iframe>
     </main>
-    <div class="about-footer">
+    <footer class="footer about-footer">
         <?php
             include("phpcomp/footer.php");
         ?>
-    </div>
+    </footer>
 </body>
 <?php
     include("script.php");

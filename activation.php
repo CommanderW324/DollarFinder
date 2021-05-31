@@ -16,27 +16,21 @@
 
 <body>
     <header>
-        <p class="logo">$FINDER</p>
-        <nav>
-            <ul class="nav-bar-list">
-                <li><a href="#" class="nav-link curr-page">Home</a></li>
-                <li><a href="about.html" class="nav-link other-page">About</a></li>
-            </ul>
-            <div class="account-background">
-                <a href="login.html" class="nav-link other-page"><img class="account-icon" src="account.png"
-                        alt="Account" /></a>
-            </div>
-            <?php 
-            echo "You have created an account. Now just activate it through the link in the email to start using DollarFinder !";
+        <?php
+            include("phpcomp/navigation.php");
         ?>
-        </nav>
     </header>
     <main>
-
+        <?php 
+            echo '<h2 class="coming-soon">You have created an account. Now just activate it through the link in the email to start using DollarFinder !</h2>';
+        ?>
     </main>
-    <?php
+    <footer class="footer">
+        <?php
             include("phpcomp/footer.php"); 
       ?>
+    </footer>
+
 </body>
 
 </html>
