@@ -288,7 +288,7 @@ main {
   width: 100vw;
   height: 220px;
   position: absolute;
-  bottom: 1000px;
+  top: 1000px;
   background-color: #282d32;
   color: #f0f9ff;
   display: flex;
@@ -298,10 +298,16 @@ main {
 }
 
 .about-footer {
-  height: fit-content;
-  width: fit-content;
+  width: 100vw;
+  height: 220px;
   position: absolute;
   top: 1900px;
+  background-color: #282d32;
+  color: #f0f9ff;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-container {
@@ -372,4 +378,9 @@ main {
   padding: 0 0 2px 0;
   margin: 0;
   text-align: center;
+}
+
+.coming-soon {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 50px;
 }

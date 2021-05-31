@@ -57,9 +57,11 @@
 
 
     </main>
-    <?php
+    <footer class="footer">
+        <?php
             include("phpcomp/footer.php"); 
       ?>
+    </footer>
     <script src="login.js"></script>
 </body>
 <?php
