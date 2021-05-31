@@ -54,6 +54,8 @@
                 <input type="submit" value="Register" class="form-submit" />
             </form>
         </div>
+
+
     </main>
     <?php
             include("phpcomp/footer.php"); 

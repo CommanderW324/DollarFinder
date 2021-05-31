@@ -23,7 +23,6 @@
         include("phpcomp/navigation.php"); 
       ?>
     </header>
-
     <main></main>
     <?php
       include("phpcomp/footer.php"); 
@@ -32,5 +31,4 @@
 <?php
     include("script.php");
     ?>
-
 </html>

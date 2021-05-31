@@ -24,7 +24,8 @@
                         header("location:index.php");
                     }
                 } else {
-                    echo "incorrect Password!";
+                    $_SESSION['password'] = "false";
+                    header("location: index.php");
                 }
             }
         }

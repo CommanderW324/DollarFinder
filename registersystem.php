@@ -1,5 +1,5 @@
 <?php 
-    session_start();
+    
     error_reporting(-1);
     ini_set('display_errors', 'On');    
     set_error_handler("var_dump");
@@ -19,18 +19,22 @@
         $to = $email;
         $subject = 'Activating Dollar Finder';
         $content = 'Please click the following link to activate your account :
-        localhost/DollarFinder/verification.php/?username=' . $username . '&hash='. $hash;
+        localhost/DollarFinder/verification.php?username=' . $username . '&hash='. $hash;
         $headers ='From: masterpokemon43@gmail.com' . "\r\n" .
         'Reply-To: masterpokemon43@gmail.com' . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
         $success = mail($to, $subject, $content, $headers);
         if($success) {
-            echo "Your Account has been successfully created please activate it throught the link in the email";
+            
+            echo "Your Account has been successfully created please activate it throught the link in the email, You will be redirected to home page! ";
+            header( "refresh:5;url=index.php" );
         } else {
-            echo "Failed please try again!";
+            
+            echo "Failed please try again! You will be redirected to home page";
+            header( "refresh:5;url=index.php" );
         }
 
     } else {
-        header("location: index.html"); 
+        header("location: index.php"); 
     }
 ?>
